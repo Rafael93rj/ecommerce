@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Notebook</title>
+</head>
+<body>
+    <main>
+        <section class="produto">
+            <img src="Notebook.png" alt="Notebook">
+            <h1>Notebook</h1>
+            <h3>Intel Core i5 8GB - 512GB SSD 15,6</h3>
+            <div>
+                <p>de <s>R$ 5.980,00</s></p>
+                <p>por R$ 4.557,00</p>
+            </div>
+
+        </section>
+        <section class="compra">
+            <label for="">Informe a sua região</label>
+                <select name="regiao" id="regiao" onchange="select">
+                    <option value="vazio" disable selected></option>
+                    <option value="Norte">Norte</option>
+                    <option value="Nordeste">Nordeste</option>
+                    <option value="Sudeste">Sudeste</option>
+                </select>
+                    <p id="vazio"></p>
+                    <p id="respostaUm">No momento não estamos fazendo entregas nessa região.</p>
+                    <p id="respostaDois">O prazo de entrega para essa região é de 15 dias.</p>
+                    <p id="respostaTres">O prazo de entrega para essa região é de 7 dias.</p>
+                
+                <div class="botoes">
+                    <button id="comprar">Comprar!</button>
+                    <button id="carrinho" onclick="carrinho()">Adicionar ao carrinho</button>
+                </div>
+        </section>
+        <section class="item-add" id="itemAdd">
+            <div>
+                <img src="checkbox.jpg" alt="">
+                <h1>Item adicionado ao carrinho com sucesso!</h1>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
